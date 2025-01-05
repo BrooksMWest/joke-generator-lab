@@ -39,7 +39,7 @@ function Home() {
     }
   };
 
-  // got this from trevor! 
+  // got this from trevor!
   const handleClear = () => {
     // sets the state of joke text back to an empty string
     setJokeText('');
@@ -52,17 +52,17 @@ function Home() {
       className="text-center d-flex flex-column justify-content-center align-content-center"
       style={{
         height: '90vh',
-        padding: '30px',
-        maxWidth: '400px',
+        padding: '50px',
+        maxWidth: '500px',
         margin: '0 auto',
       }}
     >
       {/* This is where the joke text is diplayed one a user clicks the get a joke button */}
       <div>{jokeText}</div>
-      <Button style={{ backgroundColor: buttonColor, marginTop: '15px' }} onClick={handleClick}>
+      <Button style={{ backgroundColor: buttonColor, width: '400px', marginTop: '50px' }} onClick={handleClick}>
         {buttonText}
       </Button>
-      <Button style={{ marginTop: '15px' }} onClick={handleClear}>
+      <Button style={{ width: '400px', marginTop: '50px' }} onClick={handleClear}>
         clear
       </Button>
     </div>
