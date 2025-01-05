@@ -1,4 +1,5 @@
-const endpoint = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart';
+// also got this from trevor although i took out some perameters to make it raunchier
+const endpoint = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=racist,sexist&type=twopart';
 
 const getJokes = () =>
   new Promise((resolve, reject) => {

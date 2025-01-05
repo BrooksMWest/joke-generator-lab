@@ -17,7 +17,7 @@ function Home() {
   // sets up a handle click to access data when user clicks a button
   const handleClick = () => {
     // this checks if the button is set to get a joke or get a another joke which will be the state at the end of getting a joke
-    if (buttonText === 'Get a Joke' || buttonText === 'ONE MORE TIME! ONE MORE TIME!') {
+    if (buttonText === 'Get a Joke' || buttonText === 'Show me another knee slapper!') {
       // here is where we are making our api call to be able to access our joke data
       getJokes().then((data) => {
         // this sets our joke state to hold our joke data retrived from out api
@@ -33,13 +33,13 @@ function Home() {
       // if the button is set to get punch line this will set the joke text state to keep the joke delivery and gets rid of the joke set up
       setJokeText(<> {joke.delivery}</>);
       // this sets our button get another joke so the user can try again.
-      setButtonText('ONE MORE TIME! ONE MORE TIME!');
+      setButtonText('Show me another knee slapper!');
       // when the user clicks this turns the button green
       setButtonColor('green');
     }
   };
 
-  // this is to restart the joke generator just for fun. This is not needed I just wanted to play around with state more
+  // got this from trevor! 
   const handleClear = () => {
     // sets the state of joke text back to an empty string
     setJokeText('');
